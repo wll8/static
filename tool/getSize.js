@@ -24,6 +24,6 @@ function addLoadEvent(func) {
 
 function sendSize() {
   const height = getComputedStyle(body).height
-  console.log(`height`, height)
-  window.parent.postMessage({ action: `resize`, data: height }, `*`)
+  console.log('height', height)
+  window.parent.postMessage({ action: 'resize', data: height }, '*')
 }
